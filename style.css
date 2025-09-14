@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  border: 5px solid black;
+}
+
+.box {
+  width: 350px;
+  height: 90px;
+  background-color: blue;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  animation-name: rightMovement;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  /* animation-delay: 2s; */
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* animation-direction: alternate; */
+  animation-direction: alternate-reverse;
+}
+/* short hand css animations
+@keyframes duration | easing-function | delay | iteration-count | */
+@keyframes rightMovement {
+  from {
+    top: 0;
+    left: 0;
+  }
+
+  to {
+    top: 0;
+    left: 1300px;
+  }
+}
